@@ -1,0 +1,14 @@
+.contacts {
+  padding: 35px 0 50px;
+  background-color: var(--default-bg-contacts);
+  color: var(--default-text-white);
+    
+  &__col {margin-bottom: 40px;}
+  &__col:last-child {margin-bottom: 35px;}
+  &__col:last-child {margin-bottom: 0;}  
+  &__description {
+    margin: 10px 0 20px;
+    line-height: calc(22 / 14);
+  }  
+  &__form {margin-top: 20px;}
+}

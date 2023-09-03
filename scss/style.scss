@@ -1,0 +1,45 @@
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('../fonts/Noto_Sans/NotoSans-Regular.eot');
+	src: local('☺'), url('../fonts/Noto_Sans/NotoSans-Regular.woff2') format('woff2'), url('../fonts/Noto_Sans/NotoSans-Regular.woff') format('woff'), url('../fonts/Noto_Sans/NotoSans-Regular.ttf') format('truetype'), url('../fonts/Noto_Sans/NotoSans-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('../fonts/Noto_Sans/NotoSans-Bold.eot');
+	src: local('☺'), url('../fonts/Noto_Sans/NotoSans-Bold.woff2') format('woff2'), url('../fonts/Noto_Sans/NotoSans-Bold.woff') format('woff'), url('../fonts/Noto_Sans/NotoSans-Bold.ttf') format('truetype'), url('../fonts/Noto_Sans/NotoSans-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../fonts/Myriad_Pro/myriadpro-bold.eot');
+	src: local('☺'), url('../fonts/Myriad_Pro/myriadpro-bold.woff2') format('woff2'), url('../fonts/Myriad_Pro/myriadpro-bold.woff') format('woff'), url('../fonts/Myriad_Pro/myriadpro-bold.ttf') format('truetype'), url('../fonts/Myriad_Pro/myriadpro-bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@import "base/_null_styles";
+@import "base/_base";
+@import "base/_layout";
+
+@import "blocks/_arrow-down";
+@import "blocks/_burger-btn";
+@import "blocks/_button";
+@import "blocks/_card";
+@import "blocks/_definitions";
+@import "blocks/_heading";
+@import "blocks/_menu";
+@import "blocks/_user-photo";
+@import "blocks/_navigation";
+@import "blocks/_social-icons";
+@import "blocks/_form-contacts";
+
+@import "sections/_contacts";
+@import "sections/_resume";
+@import "sections/_footer";
+@import "sections/_header";
+@import "sections/_works";

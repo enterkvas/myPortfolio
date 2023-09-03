@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dz19Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="css/variables.css">
+    <link rel="stylesheet" type="text/css" href="css/iconsfont.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/fit-grid.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link
+      rel="shortcut icon"
+      href="img/favicons/favicon-48x48.ico"
+      type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  </head>
+
+<body>
+  <div class="wrapper">
+    <!-- <a id="servicios"></a>
+    <a id="galeria"></a>
+    <a id="contacto"></a> -->
+    <header class="header">
+      <div class="header__container _container">
+        <nav class="navigation">
+          <div class="burger-btn"><span></span></div>
+          <ul class="navigation__list menu-list">
+            <li class="menu-list__item"><a data-goto="#resume" href="#" class="menu__link">resume</a></li>
+            <li class="menu-list__item"><a data-goto="#portfolio" href="#" class="menu__link">portfolio</a></li>
+            <li class="menu-list__item"><a data-goto="#contacts" href="#" class="menu__link">contacts</a></li>
+          </ul>
+        </nav>
+        <div class="header__photo">
+          <div class="user-photo user-photo--shadow">
+            <img src="img/images/images-myPhoto/myPhoto_1.jpg" alt="My photo">
+          </div>
+        </div>
+        <hgroup class="header__text">
+          <h1 class="header__title">Aleksandr Bugakov</h1>
+          <p class="header__subtitle">HTML Site Developer</p>
+        </hgroup>
+        <a href="#" data-mouse="#resume" class="mouse__scroll">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+          <div>
+            <span class="m__scroll-arrows unu"></span>
+            <span class="m__scroll-arrows doi"></span>
+            <span class="m__scroll-arrows trei"></span>
+          </div>
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="resume">
+        <div class="resume__container _container" id="resume">
+          <div class="resume__photo">
+            <div class="user-photo user-photo--big">
+              <img src="img/images/images-myPhoto/myPhoto_1.jpg" alt="My photo">
+            </div>
+          </div>          
+            <h2 class="resume__title heading">Resume</h2>
+            <div class="resume__about">
+              <div class="resume__name">Alexander Bugakov</div>            
+              <p>55 years, Buenos Aires, Argentina</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore vero facilis laudantium provident voluptate ea expedita, modi necessitatibus hic tempore. Atque, laboriosam ex? Fugiat quidem aut maiores doloremque ipsa dolorem.</p>              
+            </div>         
+          <div class="resume__row">            
+            <div class="resume__col">
+              <div class="heading heading--medium">Work experience</div>
+              <ul class="definition-list">
+                <li class="definition-list__item">
+                  <div class="definition-list__def">December - present</div>                  
+                  <p>Layback Ruster in the web studio "Web Start"</p>                  
+                </li>
+                <li class="definition-list__item">
+                  <div class="definition-list__def">October 2015 - December 2015</div>
+                  <p>Freenser, web designer.</p>
+                </li>
+                <li class="definition-list__item">
+                  <div class="definition-list__def">St. 2014 - October 2015</div>
+                  <p>"LLC Cyber Soft" is a system administrator.</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="resume__col">
+              <div class="heading--medium">Education</div>
+              <ul class="resume__list definition-list">
+                <li class="definition-list__item">
+                  <div class="definition-list__def">1983 - 1990</div>
+                  <p>Novocherkassk Polytechnic Institute CHIMIC-technologist</p>
+                </li>
+                <li class="definition-list__item">
+                  <div class="definition-list__def">October 2015 - December 2015</div>
+                  <p>Freenser, web designer.</p>
+                </li>
+                <li class="definition-list__item">
+                  <div class="definition-list__def">St. 2014 - October 2015</div>
+                  <p>"LLC Cyber Soft" is a system administrator.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="resume__button">
+            <a class="button" href="https://www.linkedin.com/jobs/application-settings/" target="a_blank">
+              <i class="fa fa-download"></i>Download resume
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="works" id="portfolio">
+        <div class="works__container _container">
+          <h2 class="works__title heading">My works</h2>
+
+          <!-- <div class="filter" data-filter="all">All elements</div>
+          <div class="filter" data-filter=".blue">Blue</div>
+          <div class="filter" data-filter=".green">Green</div> -->
+
+          <!-- <div id="testcontainer">
+            <div class="mix blue">blue 1</div>
+            <div class="mix blue">blue 2</div>
+            <div class="mix blue">blue 3</div>
+            <div class="mix green">green 1</div>
+            <div class="mix green">green 2</div>
+            <div class="mix green">green 3</div>
+          </div> -->
+
+          <div class="works-filter">
+            <ul class="works-filter__categories" id="categories">
+              <li class="works-filter__element"><span data-id="all" class="filter filter--active">All</span></li>
+              <li class="works-filter__element"><span data-id="design" class="filter">HTML+CSS</span></li>
+              <li class="works-filter__element"><span data-id="bootstrap" class="filter">bootstrap</span></li>
+              <li class="works-filter__element"><span data-id="educational" class="filter">educational</span></li>
+              <li class="works-filter__element"><span data-id="order" class="filter">to order</span></li>
+            </ul>
+          </div>
+          <div class="works__row" id="portfolio-projects">
+            <!-- <div class="works__col"> -->
+              <div class="works__item card educational bootstrap">
+                <div class="card__img">
+                  <img src="img/images/images-portfolio/apollo.png" alt="Apollo picture">
+                </div>
+                <div class="card__title">
+                  <a href="#">Training model Apollo</a>
+                </div>
+                <div class="card__description">
+                  <p>Layout Landing Hosting Company.Mobile adaptability.</p>
+                </div>
+              </div>
+            <!-- </div> -->
+            <!-- <div class="works__col"> -->
+              <div class="works__item card educational design">
+                <div class="card__img">
+                  <img src="img/images/images-portfolio/organica.png" alt="Organica picture">
+                </div>
+                <div class="card__title">
+                  <a href="#">Organica training model</a>
+                </div>
+                <div class="card__description">
+                  <p>Layout of a single-page site on the PSD layout.</p>
+                </div>
+              </div>
+            <!-- </div> -->
+            <!-- <div class="works__col"> -->
+              <div class="works__item card educational portfolio">
+                <div class="card__img">
+                  <img src="img/images/images-portfolio/portfolio.png" alt="Portfolio picture">
+                </div>
+                <div class="card__title">
+                  <a href="#">Personal site Portfolio</a>
+                </div>
+                <div class="card__description">
+                  <p>Layout of the personal site of the portfolio on which you are now.</p>
+                </div>
+              </div>
+            <!-- </div> -->
+            <!-- <div class="works__col"> -->
+              <div class="works__item card order">
+                <div class="card__img">
+                  <img src="img/images/images-portfolio/music.png" alt="Music picture">
+                </div>
+                <div class="card__title">
+                  <a href="#">Audio-techniques</a>
+                </div>
+                <div class="card__description">
+                  <p>Layout pages for a vintage audio equipment store.</p>
+                </div>
+              </div>
+            <!-- </div> -->
+            <!-- <div class="works__col"> -->
+              <div class="works__item card order">
+                <div class="card__img">
+                  <img src="img/images/images-portfolio/motorcycle.png" alt="Motorcycle picture">
+                </div>
+                <div class="card__title">
+                  <a href="#">Motorcycle store</a>
+                </div>
+                <div class="card__description">
+                  <p>Layout Landing for Indian Motorcycles.</p>
+                </div>
+              </div>
+            <!-- </div> -->
+            <!-- <div class="works__col"> -->
+              <div class="works__item card order">
+                <div class="card__img">
+                  <img src="img/images/images-portfolio/auto.png" alt="Auto picture">
+                </div>
+                <div class="card__title">
+                  <a href="#">Promo website of the car</a>
+                </div>
+                <div class="card__description">
+                  <p>Layout of a single-page site on the PSD layout.</p>
+                </div>
+              </div>
+            <!-- </div> -->
+          </div>
+        </div>
+      </section>
+      <section class="contacts" id="contacts">
+        <div class="contacts__container _container">
+          <div class="contacts__row">
+            <div class="contacts__col">
+              <div class="contacts__text">
+                <h2 class="contacts__title heading heading--white">Contacts</h2>
+                <p class="contacts__description">If you are looking for a website layout, the developer’s Front-End in the team or to work on the project, I am at your service.</p>
+                <ul class="contacts__list definition-list">
+                  <li class="definition-list__item">
+                    <div class="definition-list__def definition-list__def--light definition-list__def--bigger">email</div>
+                    <p class="definition-list__description"><a href="mailto:alexanderbugakov66@gmail.com">alexanderbugakov66@gmail.com</a></p>
+                  </li>
+                  <li class="definition-list__item">
+                    <div class="definition-list__def definition-list__def--light definition-list__def--bigger">skype</div>
+                    <p class="definition-list__description"><a href="skype:enterkvas">enterkvas</a></p>
+                  </li>
+                  <li class="definition-list__item">
+                    <div class="definition-list__def definition-list__def--light definition-list__def--bigger">tel</div>
+                    <p class="definition-list__description"><a href="tel:+541176401593">+541176401593</a></p>
+                  </li>
+                  <li class="definition-list__item">
+                    <div class="definition-list__def definition-list__def--light definition-list__def--bigger">address</div>
+                    <p class="definition-list__description">Argentina, Buenos Aires</p>
+                  </li>
+                  <li class="definition-list__item">
+                    <div class="definition-list__def definition-list__def--light definition-list__def--bigger">social networks</div>
+                    <div class="definition-list__description">
+                      <div class="social-icons">
+                        <a href="#" class="_icon-twitter"></a>
+                        <a href="#" class="_icon-youtube"></a>
+                        <a href="#" class="_icon-linkedin"></a>
+                        <a href="#" class="_icon-facebook"></a>
+                        <a href="#" class="_icon-github"></a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>               
+              </div>
+            </div>
+            <div class="contacts__col">              
+              <div class="heading--medium heading--white">Contact with me</div>                
+              <form class="contacts__form form-contacts fit-grid" action="#">
+                <input type="text" class="form-contacts__input form-contacts__name" name="name" placeholder="Name">
+                <input type="email" class="form-contacts__input form-contacts__email" name="email" placeholder="Email">
+                <input type="text" class="form-contacts__input form-contacts__skype" name="skype" placeholder="Skype">
+                <input type="tel" class="form-contacts__input form-contacts__tel" name="tel" placeholder="phonenumber">
+                <textarea class="form-contacts__textarea" name="big-pencil" id="#" cols="30" rows="10" placeholder="Your message"></textarea>
+                <input type="submit" class="form-contacts__input form-contacts__submit" value="Submit">
+              </form>              
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container _container">       
+        <p class="footer__copyright">© 2016 Aleksandr Bugakov</p>
+        <p class="footer__description">Web developer from Buenos Aires. I am engaged in layout and creation of sites.</p>
+        <p class="footer__description">This site made in the framework of the training on layout at
+          courses from <a href="#">Webcademy.ru</a></p>        
+      </div>
+    </footer>
+  </div>  
+
+    <!-- Vendor scripts -->
+    <script src="libs/jquery/jquery-1.11.2.min.js"></script>
+    <script src="libs/mixitup2/jquery.mixitup.min.js"></script>
+
+    <!-- Custom scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/filter.js"></script>
+  </body>
+</html>

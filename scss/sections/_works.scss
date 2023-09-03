@@ -1,0 +1,39 @@
+.works {
+  padding: 40px 0 45px;
+  border-top: 1px solid var(--default-border-bottom-sections);
+
+  &__title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  &-filter {
+    font-family: 'Noto Sans';
+    font-size: 16px;    
+    font-weight: 700;
+    text-transform: uppercase;   
+    margin-bottom: 20px;
+    
+    &__categories {text-align: center;}
+    
+    &__element {     
+      cursor: pointer; 
+      margin-bottom: 10px; 
+      
+      &:last-child {margin-bottom: 0;}
+
+      .filter {
+        display: inline-block;
+        color: #cecece;
+        padding: 12px 25px;        
+
+        &--active {
+          padding: 10px 20px;
+          border: 2px solid var(--default-text-blue-dark);
+          color: #000;          
+        }
+      }
+    }
+  }
+  &__item {margin-bottom: 35px;}   
+}

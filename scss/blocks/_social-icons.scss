@@ -1,0 +1,14 @@
+.social-icons {
+  font-size: 32px;
+  padding-top: 15px;
+
+  & a {
+    margin-right: 22px;
+    text-decoration: none;
+    border-bottom: none;
+
+    &:hover {color: var(--default-hover-orange);}
+  } 
+  
+  & a:last-child {margin-right: 0;}  
+}

@@ -1,0 +1,21 @@
+.heading {
+  font-family: 'Noto Sans';
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: var(--default-text-blue-dark);  
+
+  &--medium {  
+    font-size: 24px;
+    line-height: calc(28 / 24);
+    font-weight: 700;
+    color: #010101;    
+  }
+  
+  &--white {
+    color: var(--default-text-white);
+  }
+}
+
+
+

@@ -1,0 +1,17 @@
+:root {
+  --default-fz14: 14px;  
+  --default-fz32: 32px;
+  --default-text-white: #fff;
+  --default-text-blue-dark: #0052c2;
+  --default-text-blue-light: #a2d1f4;
+  --default-text-black-near: #010101;
+  --default-hover-orange: #ffe400;
+  --default-bg-menu: #1D6DAC;
+  --default-bg-menu-mobile: #15598D;
+  --default-bg-contacts:  #065a97;
+  --default-bg-footer: #003f6d;
+  --default-border-bottom-sections: #e9eff3;
+  --default-color-categories: #cecece;   
+  --default-text-input: #00599A; 
+  --swiper-pagination-bullet-horizontal-gap: 9px;
+}

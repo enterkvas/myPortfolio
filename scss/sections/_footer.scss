@@ -1,0 +1,19 @@
+.footer {
+  padding: 40px 0;
+  background-color: var(--default-bg-footer);
+
+  &__copyright {
+    font-size: 16px;
+    line-height: calc(28 / 16);
+    color: #82b3d7;
+  }
+  &__description {
+    line-height: calc(22 / 14);
+    color: #5e92b9;
+
+    & a {
+      color: #5e92b9;
+      border-bottom: 1px solid #5e92b9;
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.button {
+  display: inline-block;
+  background-color: var(--default-text-blue-dark);
+  padding: 15px 20px;
+  color: #fff;
+  border-radius: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: 1px 3px 15px 0px rgba(0,82,194,0.5);
+  
+  .fa {margin-right: 7px;}
+}
+
+
+/* Button "Up": */
+.btn_up {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  z-index: 100;
+  outline: 0 !important;
+  background: rgba(255, 255, 255, .5);
+}
+@media(min-width: 992px) {
+  .btn_up:hover {cursor: pointer;}
+}
+.btn_up::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: -5px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.btn_up::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.btn_up.active {display: block;}
