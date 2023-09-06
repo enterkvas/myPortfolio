@@ -1,9 +1,9 @@
 .card {
-  display: inline-block;  
+  // display: inline-block;  
 
-  &:last-child {margin-bottom: 0px;}
+  // &:last-child {margin-bottom: 0px;}
 
-  &__img {margin-bottom: 10px;}
+  // &__img {margin-bottom: 10px;}
 
     &--hover{       
       position: absolute;
@@ -30,7 +30,7 @@
     cursor: pointer;
   }
   
-  &__title {margin-bottom: 5px;}
+  &__title {margin: 18px 0 7px;}
 
   &__title a {    
     font-family: 'Noto Sans', serif, sans-serif;
