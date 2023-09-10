@@ -1,35 +1,48 @@
 .card {
-  // display: inline-block;  
 
-  // &:last-child {margin-bottom: 0px;}
-
-  // &__img {margin-bottom: 10px;}
-
-    &--hover{       
-      position: absolute;
-      top: 100%;
-      bottom: 0;
-      left: 0;      
-      right: 0;
-      text-align: center;
-      font-size: 26px;
-      color: #fff;
-      background-color: rgba(0,82,194,.9);        
-      transition: top 0.5s ease-out;    
-
-      .fa {
-        margin-top: 40px;
-        font-size: 64px;
-        margin-bottom: 15px;
-      }
-    }   
-  
-  .card__img:hover .card__img--hover{
+  &__img {
+    position: relative;
     display: block;
-    top: 0%;
-    cursor: pointer;
-  }
-  
+    min-height: 190px;
+    margin-bottom: 10px;
+    background-image: url("../img/images/images-placeholders/project_placeholder.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &--hover{
+      display: none;      
+
+      @media (min-width: 993px) {       
+        position: absolute;
+        display: block;
+        height: 190px;
+        top: 0;
+        bottom: 0;
+        left: 0;      
+        right: 0;
+        text-align: center;
+        font-size: 26px;
+        color: #fff;
+        background-color: rgba(0,82,194,.9); 
+        opacity: 0;
+        transition: .5s;       
+        -webkit-transition: 0.5s;  // для Safari 
+
+        .fa {
+          margin: 40px 0 15px;
+          font-size: 64px;
+        }        
+      }
+    }
+
+    @media (min-width: 993px) {
+      &:hover &--hover{     
+        opacity: 1;
+      }
+    }
+  }   
+
   &__title {margin: 18px 0 7px;}
 
   &__title a {    
