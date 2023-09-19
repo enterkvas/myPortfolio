@@ -70,7 +70,7 @@
             </div>         
           <div class="resume__row">            
             <div class="resume__col">
-              <div class="heading heading--medium">Work experience</div>
+              <h3 class="heading heading--medium">Work experience</h3>
               <ul class="definition-list">
                 <li class="definition-list__item">
                   <div class="definition-list__def">December - present</div>                  
@@ -88,7 +88,7 @@
             </div>
 
             <div class="resume__col">
-              <div class="heading--medium">Education</div>
+              <h3 class="heading--medium">Education</h3>
               <ul class="resume__list definition-list">
                 <li class="definition-list__item">
                   <div class="definition-list__def">1983 - 1990</div>
@@ -286,14 +286,33 @@
               </div>
             </div>
             <div class="contacts__col">              
-              <div class="heading--medium heading--white">Contact with me</div>                
-              <form class="contacts__form form-contacts fit-grid" action="#">
-                <input type="text" class="form-contacts__input form-contacts__name" name="name" placeholder="Name">
-                <input type="email" class="form-contacts__input form-contacts__email" name="email" placeholder="Email">
-                <input type="text" class="form-contacts__input form-contacts__skype" name="skype" placeholder="Skype">
-                <input type="tel" class="form-contacts__input form-contacts__tel" name="tel" placeholder="phonenumber">
-                <textarea class="form-contacts__textarea" name="big-pencil" id="#" cols="30" rows="10" placeholder="Your message"></textarea>
-                <input type="submit" class="form-contacts__input form-contacts__submit" value="Submit">
+              <h3 class="heading--medium heading--white">Contact with me</h3>                
+              <form class="contacts__form form-contacts" action="#">
+                <div class="form-contacts__item">
+                  <label for="formName" class="form-contacts__label">Name*:</label>
+                  <input id="formName" type="text" class="form-contacts__input form-contacts__name" name="name" placeholder="Name">
+                </div>
+                <div class="form-contacts__item">
+                  <label for="formEmail"  class="form-contacts__label">Email*:</label>
+                  <input id="formEmail" type="email" class="form-contacts__input form-contacts__email" name="email" placeholder="Email">
+                </div>
+                <div class="form-contacts__item">
+                  <label for="formSkype" class="form-contacts__label">Skype:</label>
+                  <input id="formSkype" type="text" class="form-contacts__input form-contacts__skype" name="skype" placeholder="Skype">
+                </div>
+                <div class="form-contacts__item">
+                  <label for="formPhonenumber" class="form-contacts__label">Phonenumber:</label>
+                  <input id="formPhonenumber" type="tel" class="form-contacts__input form-contacts__tel" name="tel" placeholder="Phonenumber">
+                </div>
+                <div class="form-contacts__item">
+                  <label for="formMessage" class="form-contacts__label">Message:</label>
+                  <textarea id="formMessage" class="form-contacts__message" name="big-pencil" id="#" cols="30" rows="10" placeholder="Your message"></textarea>
+                </div>
+                <div class="form-contacts__item checkbox">                  
+                  <input id="formAgreement" type="checkbox" name="agreement" class="checkbox__input" checked>
+                  <label for="formAgreement" class="form-contacts__label"><span>Я даю согласие на обработку моих персональных данных в соответствии с <a href="#">Условиями</a>*</span></label>
+                </div>                
+                <button type="submit" class="form-contacts__button">Submit</button>               
               </form>              
             </div>
           </div>
