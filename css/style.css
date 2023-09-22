@@ -638,9 +638,6 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   font-weight: 700;
   color: #ffffff;
 }
-.form-contacts input.checkbox__input {
-  display: inline;
-}
 
 .contacts {
   padding: 35px 0 50px;
