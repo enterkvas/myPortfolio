@@ -601,42 +601,49 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   margin-right: 0;
 }
 
-.form-contacts {
+.form {
   display: grid;
   gap: 20px;
 }
-.form-contacts__input, .form-contacts__message {
-  display: block;
+.form__input, .form__message {
   width: 100%;
   padding: 15px 10px;
   margin-top: 10px;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1;
-  background-color: #fff;
+  background-color: var(--default-text-white);
   color: var(--default-text-input);
   border: none;
   border-radius: 4px;
-  font-weight: 700;
+  transition: all 0.5s ease;
 }
-.form-contacts__label {
+.form__input:focus, .form__message:focus {
+  box-shadow: 0px 0px 5px 10px var(--default-bg-footer);
+}
+.form__input._error, .form__message._error {
+  background-color: red;
+}
+.form__label {
   font-size: 16px;
   font-weight: 700;
 }
-.form-contacts__label span {
-  font-weight: 400;
-}
-.form-contacts__label span a {
-  color: gold;
-}
-.form-contacts__button {
+.form__button {
   height: 60px;
   background-color: var(--default-bg-contacts);
-  border: 4px solid #ffffff;
+  border: 4px solid var(--default-text-white);
   border-radius: 30px;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--default-text-white);
+}
+.form .checkbox__label span {
+  font-size: 16px;
+  font-weight: 400;
+}
+.form .checkbox__label span a {
+  color: var(--default-hover-orange);
 }
 
 .contacts {

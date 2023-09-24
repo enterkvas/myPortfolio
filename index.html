@@ -287,32 +287,28 @@
             </div>
             <div class="contacts__col">              
               <h3 class="heading--medium heading--white">Contact with me</h3>                
-              <form class="contacts__form form-contacts" action="#">
-                <div class="form-contacts__item">
-                  <label for="formName" class="form-contacts__label">Name*:</label>
-                  <input id="formName" type="text" class="form-contacts__input form-contacts__name" name="name" placeholder="Name">
+              <form id="form" class="contacts__form form" action="#">
+                <div class="form__item">
+                  <label for="formName" class="form__label">Name*:</label>
+                  <input id="formName" type="text" class="form__input form__name _req _name" name="name" placeholder="Name">
                 </div>
-                <div class="form-contacts__item">
-                  <label for="formEmail"  class="form-contacts__label">Email*:</label>
-                  <input id="formEmail" type="email" class="form-contacts__input form-contacts__email" name="email" placeholder="Email">
+                <div class="form__item">
+                  <label for="formEmail"  class="form__label">Email*:</label>
+                  <input id="formEmail" type="email" class="form__input form__email _req _email" name="email" placeholder="Email">
                 </div>
-                <div class="form-contacts__item">
-                  <label for="formSkype" class="form-contacts__label">Skype:</label>
-                  <input id="formSkype" type="text" class="form-contacts__input form-contacts__skype" name="skype" placeholder="Skype">
+                <div class="form__item">
+                  <label for="formSkype" class="form__label">Skype:</label>
+                  <input id="formSkype" type="text" class="form__input form__skype" name="skype" placeholder="Skype">
                 </div>
-                <div class="form-contacts__item">
-                  <label for="formPhonenumber" class="form-contacts__label">Phonenumber:</label>
-                  <input id="formPhonenumber" type="tel" class="form-contacts__input form-contacts__tel" name="tel" placeholder="Phonenumber">
+                <div class="form__item">
+                  <label for="formPhonenumber" class="form__label">Phonenumber:</label>
+                  <input id="formPhonenumber" type="tel" class="form__input form__tel" name="tel" placeholder="Phonenumber">
                 </div>
-                <div class="form-contacts__item">
-                  <label for="formMessage" class="form-contacts__label">Message:</label>
-                  <textarea id="formMessage" class="form-contacts__message" name="big-pencil" cols="30" rows="10" placeholder="Your message"></textarea>
+                <div class="form__item">
+                  <label for="formMessage" class="form__label">Message:</label>
+                  <textarea id="formMessage" class="form__message _req" name="big-pencil" cols="30" rows="10" placeholder="Your message"></textarea>
                 </div>
-                <div class="form-contacts__item checkbox">                  
-                  <input id="formAgreement" type="checkbox" name="agreement" class="checkbox__input" checked>
-                  <label for="formAgreement" class="checkbox__label"><span>Я даю согласие на обработку моих персональных данных в соответствии с <a href="#">Условиями</a>*</span></label>
-                </div>                
-                <button type="submit" class="form-contacts__button">Submit</button>               
+                <button type="submit" class="form__button">Submit</button>               
               </form>              
             </div>
           </div>
@@ -335,7 +331,8 @@
     <script src="libs/mixitup2/jquery.mixitup.min.js"></script>
 
     <!-- Custom scripts -->
+    <script src="js/form.js"></script>
     <script src="js/script.js"></script>
-    <script src="js/filter.js"></script>
+    <!-- <script src="js/filter.js"></script> -->
   </body>
 </html>
