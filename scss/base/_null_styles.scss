@@ -52,7 +52,7 @@ textarea {
   font-family: inherit;
 }
 
-input::-ms-clear {
+input::-ms-clear { //нестандартный псевдоэлемент, работает только в браузерах Internet Explorer и Edge
   display: none;
 }
 

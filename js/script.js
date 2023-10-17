@@ -156,5 +156,3 @@ list.addEventListener('click', e => {
     e.target.classList.add('filter--active');
   }
 });
-// =========== Form ====================
-

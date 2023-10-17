@@ -1,5 +1,5 @@
 "use strict"
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('form');
   form.addEventListener('submit', formSend);
 
@@ -8,7 +8,24 @@ document.addEventListener('DOMContentLoaded', function(){
 
     let error = formValidate(form);
 
-    if(error === 0){} else{
+    let formData = new FormData(form);
+
+    if(error === 0){
+      form.classList.add('_sending');
+      // let response = await fetch('sendmail.php', {
+      //   method: 'POST', 
+      //   body: formData
+      // });
+      // if(response.ok) {
+      //   let result = await response.json();
+      //   alert(result.message);
+      //   form.reset();
+      //   form.classList.remove('_sending');
+      // } else {
+      //   alert('Error');
+      //   form.classList.remove('_sending');
+      // }
+    } else {
       alert('Fill in required fields');
     }
   }
@@ -17,14 +34,14 @@ document.addEventListener('DOMContentLoaded', function(){
     let error = 0;
     let formReq = document.querySelectorAll('._req');
 
-    for(let index = 0; index < formReq.length; index++){
+    for(let index = 0; index < formReq.length; index++) {
       const input = formReq[index];
       formRemoveError(input);
 
-      if(input.value === ''){
+      if(input.value === '') {
         formAddError(input);
         error++;
-      } else if(input.classList.contains('_email')){
+      } else if(input.classList.contains('_email')) {
         if(emailTest(input)){
           formAddError(input);          
           error++;
@@ -33,16 +50,16 @@ document.addEventListener('DOMContentLoaded', function(){
     }
     return error;
   }
-  function formAddError(input){
+  function formAddError(input) {
     input.parentElement.classList.add('_error');
     input.classList.add('_error');
   }
-  function formRemoveError(input){
+  function formRemoveError(input) {
     input.parentElement.classList.remove('_error');
     input.classList.remove('_error');
   }
   // Email test function
-  function emailTest(input){
+  function emailTest(input) {
     return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
   }
 });
