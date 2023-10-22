@@ -70,23 +70,23 @@
   display: grid;
   gap: 20px;
   
-  &::after {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(51, 51, 51, .9) url("../../img/bg/loading.gif") center / 50px no-repeat;
-    opacity: 0;
-    visibility: hidden;
-    transition: all .5s ease 0s;
-  }
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: rgba(51, 51, 51, .9) url("../../img/bg/loading.gif") center / 50px no-repeat;
+  //   opacity: 0;
+  //   visibility: hidden;
+  //   transition: all .5s ease 0s;
+  // }
 
-  &._sending::after {
-    opacity: 1;
-    visibility: visible;
-  }
+  // &._sending::after {
+  //   opacity: 1;
+  //   visibility: visible;
+  // }
   
   &__input, &__message {    
     width: 100%;
@@ -118,14 +118,53 @@
     font-weight: 700;
     color: var(--default-text-white);
   }  
-  .checkbox {
-    &__label {
-      & span {
-        font-size: 16px;
-        font-weight: 400;
+  // .checkbox {
+  //   &__label {
+  //     & span {
+  //       font-size: 16px;
+  //       font-weight: 400;
 
-        & a {color: var(--default-hover-orange);}
-      }
+  //       & a {color: var(--default-hover-orange);}
+  //     }
+  //   }
+  // }
+  label.error {
+    background-color: #c62828;
+    position: relative; 
+    display: block;
+    border-radius: 4px;
+    /* color: #fff; */
+    padding: 5px 15px 8px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    margin-top: 13px;
+    letter-spacing: 1px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      left: 10px;
+      // margin-left: var(--cornerSize);
+      width: 0px; 
+      height: 0px;
+      border-bottom: var(--cornerSize) solid #c62828;
+      border-right: var(--cornerSize) solid transparent;
+      border-left: var(--cornerSize) solid transparent;
     }
+  }
+
+  &__success {
+    display: block;
+    position: relative; 
+    margin-top: 13px;
+    margin-bottom: 4px;
+    padding: 5px 15px 8px;
+    border-radius: 4px;
+    text-align: center;
+    background-color:  #fff;
+    color: #4CAF50;
+    font-size: 16px;
+    font-weight: 700;
   }
 }    

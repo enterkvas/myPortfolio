@@ -1,65 +1,49 @@
-"use strict"
-document.addEventListener('DOMContentLoaded', function() {
-  const form = document.getElementById('form');
-  form.addEventListener('submit', formSend);
+// jQuery Validate JS
+$("#form").validate({
+  rules: {
+    name: { required: true },
+    email: { 
+      required: true, 
+      email: true 
+    },
+    // skype:  { required: true },
+    // phone:  { required: true },
+    message: { required: true }
+  },
 
-  async function formSend(e){
-    e.preventDefault();
+  messages: {
+    name: {
+      required: "Пожалуйста, введите свое имя"},
+    email: {
+      required: "Пожалуйста, введите свой email",
+      email: "Email адрес должен быть в формате name@domain.com . Возможно вы ввели email с ошибкой."
+    },
+    message: "Пожалуйста, введите текст сообщения"
+  },
 
-    let error = formValidate(form);
+  submitHandler: function(form) {
+    ajaxFormSubmit();
+  }
 
-    let formData = new FormData(form);
+})
 
-    if(error === 0){
-      form.classList.add('_sending');
-      // let response = await fetch('sendmail.php', {
-      //   method: 'POST', 
-      //   body: formData
-      // });
-      // if(response.ok) {
-      //   let result = await response.json();
-      //   alert(result.message);
-      //   form.reset();
-      //   form.classList.remove('_sending');
-      // } else {
-      //   alert('Error');
-      //   form.classList.remove('_sending');
-      // }
-    } else {
-      alert('Fill in required fields');
+// Функция AJAX запрса на сервер
+function ajaxFormSubmit(){
+  var string = $("#form").serialize(); // Соханяем данные введенные в форму в строку. 
+
+  // Формируем ajax запрос
+  $.ajax({
+    type: "POST", // Тип запроса - POST
+    url: "php/mail.php", // Куда отправляем запрос
+    data: string, // Какие даные отправляем, в данном случае отправляем переменную string
+    
+    // Функция если все прошло успешно
+    success: function(html){
+      $("#form").slideUp(800);
+      $('#answer').html(html);
     }
-  }
+  });
 
-  function formValidate(form){
-    let error = 0;
-    let formReq = document.querySelectorAll('._req');
-
-    for(let index = 0; index < formReq.length; index++) {
-      const input = formReq[index];
-      formRemoveError(input);
-
-      if(input.value === '') {
-        formAddError(input);
-        error++;
-      } else if(input.classList.contains('_email')) {
-        if(emailTest(input)){
-          formAddError(input);          
-          error++;
-        };
-      } 
-    }
-    return error;
-  }
-  function formAddError(input) {
-    input.parentElement.classList.add('_error');
-    input.classList.add('_error');
-  }
-  function formRemoveError(input) {
-    input.parentElement.classList.remove('_error');
-    input.classList.remove('_error');
-  }
-  // Email test function
-  function emailTest(input) {
-    return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
-  }
-});
+  // Чтобы по Submit больше ничего не выполнялось - делаем возврат false чтобы прервать цепчку срабатывания остальных функций
+  return false; 
+}
