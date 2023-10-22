@@ -605,22 +605,6 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   display: grid;
   gap: 20px;
 }
-.form::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(51, 51, 51, 0.9) url("../../img/bg/loading.gif") center/50px no-repeat;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.5s ease 0s;
-}
-.form._sending::after {
-  opacity: 1;
-  visibility: visible;
-}
 .form__input, .form__message {
   width: 100%;
   padding: 15px 10px;
@@ -654,12 +638,41 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   font-weight: 700;
   color: var(--default-text-white);
 }
-.form .checkbox__label span {
-  font-size: 16px;
-  font-weight: 400;
+.form label.error {
+  background-color: #c62828;
+  position: relative;
+  display: block;
+  border-radius: 4px;
+  /* color: #fff; */
+  padding: 5px 15px 8px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  margin-top: 13px;
+  letter-spacing: 1px;
 }
-.form .checkbox__label span a {
-  color: var(--default-hover-orange);
+.form label.error::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  border-bottom: var(--cornerSize) solid #c62828;
+  border-right: var(--cornerSize) solid transparent;
+  border-left: var(--cornerSize) solid transparent;
+}
+.form__success {
+  display: block;
+  position: relative;
+  margin-top: 13px;
+  margin-bottom: 4px;
+  padding: 5px 15px 8px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #fff;
+  color: #4CAF50;
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .contacts {
