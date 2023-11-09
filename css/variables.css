@@ -11,7 +11,8 @@
   --default-bg-contacts:  #065a97;
   --default-bg-footer: #003f6d;
   --default-border-bottom-sections: #e9eff3;
-  --default-color-categories: #cecece;   
+  --default-color-categories: #cecece;
+  --default-color-form-border: #FF0000;   
   --default-text-input: #00599A; 
   --swiper-pagination-bullet-horizontal-gap: 9px;
 }

@@ -623,14 +623,14 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
 }
 .form__input, .form__message {
   width: 100%;
-  padding: 15px 10px;
+  padding: 10px;
   margin-top: 10px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1;
   background-color: var(--default-text-white);
   color: var(--default-text-input);
-  border: none;
+  border: 5px solid transparent;
   border-radius: 4px;
   transition: all 0.5s ease;
 }
@@ -638,7 +638,7 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   box-shadow: 0px 0px 5px 10px var(--default-bg-footer);
 }
 .form__input._error, .form__message._error {
-  background-color: red;
+  border: 5px solid var(--default-color-form-border);
 }
 .form__label {
   font-size: 16px;

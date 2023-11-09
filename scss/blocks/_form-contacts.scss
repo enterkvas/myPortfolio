@@ -90,19 +90,19 @@
   
   &__input, &__message {    
     width: 100%;
-    padding: 15px 10px;
+    padding: 10px;
     margin-top: 10px;
     font-size: 16px;
     font-weight: 700;
     line-height: 1;
     background-color: var(--default-text-white);
     color: var(--default-text-input);
-    border: none;    
+    border: 5px solid transparent;    
     border-radius: 4px;
     transition: all .5s ease;
 
     &:focus{box-shadow: 0px 0px 5px 10px var(--default-bg-footer);}
-    &._error{background-color: red;}
+    &._error{border: 5px solid var(--default-color-form-border);}
   }  
   &__label {
     font-size: 16px;
