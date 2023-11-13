@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
       //   form.classList.remove('_sending');
       // }
     } else {
-      alert('Fill in required fields');
+      alert('Fill in required fields!');
     }
   }
 
@@ -39,24 +39,34 @@ document.addEventListener('DOMContentLoaded', function() {
       formRemoveError(input);
 
       if(input.value === '') {
-        formAddError(input);
+        formAddError(input, 'Fill in required fields!');
         error++;
-      } else if(input.classList.contains('_email')) {
-        if(emailTest(input)){
-          formAddError(input);          
+      } else if(input.classList.contains('form__email')) {
+        // if(emailTest(input)){
+          formAddError(input, 'dkfdl');          
           error++;
-        };
+        // };
       } 
     }
     return error;
   }
-  function formAddError(input) {
-    input.parentElement.classList.add('_error');
+  function formAddError(input, text) {
+    // input.parentElement.classList.add('_error');
     input.classList.add('_error');
+    const formItems = input.parentNode;
+    const errorLabel = document.createElement('label');
+    errorLabel.classList.add('error-label');
+    errorLabel.textContent = text;    
+    // input.classList.add('_error');
+    formItems.append(errorLabel);
   }
   function formRemoveError(input) {
-    input.parentElement.classList.remove('_error');
+    // input.parentElement.classList.remove('_error');
+    const formItems = input.parentNode;
+    if(input.classList.contains('_error')){
+      formItems.querySelector('.error-label').remove();
     input.classList.remove('_error');
+    }    
   }
   // Email test function
   function emailTest(input) {

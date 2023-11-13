@@ -87,6 +87,11 @@
     opacity: 1;
     visibility: visible;
   }
+
+  // &__item {
+  //   &:focus{box-shadow: 0px 0px 5px 10px var(--default-bg-footer);}
+  //   &._error{border: 5px solid var(--default-color-form-border);}
+  // }
   
   &__input, &__message {    
     width: 100%;
@@ -97,12 +102,12 @@
     line-height: 1;
     background-color: var(--default-text-white);
     color: var(--default-text-input);
-    border: none;    
+    border: 5px solid transparent;    
     border-radius: 4px;
     transition: all .5s ease;
 
     &:focus{box-shadow: 0px 0px 5px 10px var(--default-bg-footer);}
-    &._error{background-color: red;}
+    &._error{border: 5px solid var(--default-color-form-border);}
   }  
   &__label {
     font-size: 16px;
