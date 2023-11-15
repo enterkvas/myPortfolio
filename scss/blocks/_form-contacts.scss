@@ -95,7 +95,7 @@
   
   &__input, &__message {    
     width: 100%;
-    padding: 15px 10px;
+    padding: 10px 10px;
     margin-top: 10px;
     font-size: 16px;
     font-weight: 700;
@@ -110,8 +110,11 @@
     &._error{border: 5px solid var(--default-color-form-border);}
   }  
   &__label {
+    display: block;
+    margin-top: 10px;   
     font-size: 16px;
-    font-weight: 700;    
+    font-weight: 700;
+    line-height: 1.3; 
   }
   &__button {
     height: 60px;
@@ -126,7 +129,7 @@
   .checkbox {
     &__label {
       & span {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 400;
 
         & a {color: var(--default-hover-orange);}
