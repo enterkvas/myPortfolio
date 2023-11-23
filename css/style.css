@@ -603,7 +603,7 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
 .form {
   position: relative;
   display: grid;
-  gap: 20px;
+  gap: 10px;
 }
 .form::after {
   position: absolute;
@@ -623,14 +623,13 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
 }
 .form__input, .form__message {
   width: 100%;
-  padding: 10px 10px;
-  margin-top: 10px;
+  padding: 15px 10px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1;
   background-color: var(--default-text-white);
   color: var(--default-text-input);
-  border: 5px solid transparent;
+  border: 3px solid transparent;
   border-radius: 4px;
   transition: all 0.5s ease;
 }
@@ -638,14 +637,28 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   box-shadow: 0px 0px 5px 10px var(--default-bg-footer);
 }
 .form__input._error, .form__message._error {
-  border: 5px solid var(--default-color-form-border);
+  border: 3px solid var(--default-color-form-border);
 }
 .form__label {
+  background-color: #c62828;
+  position: relative;
   display: block;
-  margin-top: 10px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.3;
+  border-radius: 4px;
+  padding: 10px 15px;
+  margin-bottom: 4px;
+  margin-top: 13px;
+  letter-spacing: 1px;
+}
+.form__label::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 10px;
+  width: 0px;
+  height: 0px;
+  border-bottom: var(--cornerSize) solid #c62828;
+  border-right: var(--cornerSize) solid transparent;
+  border-left: var(--cornerSize) solid transparent;
 }
 .form__button {
   height: 60px;

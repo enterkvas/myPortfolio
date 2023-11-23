@@ -287,9 +287,10 @@
             </div>
             <div class="contacts__col">              
               <h3 class="heading--medium heading--white">Contact with me</h3>                
-              <form id="form" class="contacts__form form" action="#">
+              <form action="#" id="form" class="contacts__form form">                
+				
                 <div class="form__item">
-                  <input type="text" autocomplete="on" class="form__input _req" name="name" placeholder="Name">
+                  <input type="text" autocomplete="on" class="form__input _req" name="name" placeholder="Name" maxlength="30" minlength="2">
                 </div>                
                 <div class="form__item">
                   <input type="email" autocomplete="on" class="form__input form__email _req" name="email" placeholder="Email">
@@ -301,7 +302,7 @@
                   <input type="tel" autocomplete="on" class="form__input form__tel" name="tel" placeholder="Phonenumber">
                 </div>
                 <div class="form__item">
-                  <textarea id="formMessage" class="form__message _req" cols="30" rows="10" placeholder="Your message"></textarea>
+                  <textarea id="formMessage" class="form__message _req" cols="30" rows="7" placeholder="Your message" maxlength="200" minlength="10" name="message"></textarea>
                 </div>
                 <button type="submit" class="form__button">Submit</button>               
               </form>              
@@ -314,8 +315,7 @@
     <footer class="footer">
       <div class="footer__container _container">       
         <p class="footer__copyright">© 2016 Aleksandr Bugakov</p>
-        <p class="footer__description">Web developer from Buenos Aires. I am engaged in layout and creation of sites.</p>
-        <p class="footer__description">This site made in the framework of the training on layout at
+        <p class="footer__description">Web developer from Buenos Aires. I am engaged in layout and creation of sites.<br> This site made in the framework of the training on layout at
           courses from <a href="#">Webcademy.ru</a></p>        
       </div>
     </footer>

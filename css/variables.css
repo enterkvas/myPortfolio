@@ -15,4 +15,5 @@
   --default-color-categories: #cecece;   
   --default-text-input: #00599A; 
   --swiper-pagination-bullet-horizontal-gap: 9px;
+  --cornerSize: 12px;
 }
