@@ -9,7 +9,7 @@ iconBurger.addEventListener("click", function(e){
   // window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 // Burger Menu Link Items /Smooth Scrolling
-const menuLinks = document.querySelectorAll('.menu__link');
+const menuLinks = document.querySelectorAll('.menu-list__link');
 if (menuLinks.length > 0){
 	menuLinks.forEach(menuLink => {
 		menuLink.addEventListener("click", onMenuLinkClick);

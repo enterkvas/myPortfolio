@@ -167,17 +167,16 @@ a.mouse__scroll {
   width: 24px;
   height: 100px;
   position: absolute;
-  bottom: 2rem;
+  bottom: -3em;
   left: 50%;
   margin-left: -12px;
   animation-delay: 1.2s;
   cursor: pointer;
   scroll-behavior: smooth;
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) {
   a.mouse__scroll {
-    bottom: 2rem;
-    height: 50px;
+    bottom: -1em;
   }
 }
 a.mouse__scroll:active, a.mouse__scroll:focus {
@@ -535,50 +534,34 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 0.1em;
 }
 .menu-list__item a:active {
   color: var(--default-hover-orange);
 }
-
 @media (min-width: 768px) {
-  .menu {
+  .menu-list .menu-list {
     position: static;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+    background-color: transparent;
+    padding-top: 10px;
+    margin-bottom: 70px;
+  }
+  .menu-list .menu-list li {
+    margin-bottom: 0;
+  }
+  .menu-list .menu-list__link {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .menu-list .menu-list__link__link--active {
+    color: var(--default-hover-orange);
   }
 }
-.user-photo {
-  height: 110px;
-  width: 110px;
-}
 
-.user-photo--big {
-  margin-top: 0;
-  margin-bottom: 0;
-  opacity: 0;
-  visibility: hidden;
-  width: 0px;
-  height: 0px;
-  display: block;
-  left: -1000%;
-  background: transparent;
-  font-size: 0;
-}
-
-@media (min-width: 768px) {
-  .user-photo--big {
-    width: 110px;
-    height: 110px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    margin-top: 20px;
-    overflow: hidden;
-    visibility: visible;
-    opacity: 1;
-    border-radius: 80px;
-    box-shadow: 0px 0px 40px 0px #48779f;
-  }
-}
 @media (min-width: 768px) {
   .navigation {
     position: static;
@@ -707,49 +690,45 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   font-weight: 700;
   line-height: 1.5555555556;
 }
+.resume__photo {
+  margin-top: 0;
+  margin-bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+  display: block;
+  left: -1000%;
+  background: transparent;
+  font-size: 0;
+}
 .resume__row {
   margin: 35px 0 15px;
   display: grid;
   gap: 35px;
 }
 @media (min-width: 768px) {
-  .resume__container {
-    display: grid;
-    grid-template-rows: min-content auto min-content;
-    grid-template-columns: 1fr 3fr;
+  .resume__title {
+    background-color: yellow;
   }
   .resume__photo {
-    grid-column: 1/2;
-    grid-row: 1/4;
-    width: 110px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 95px;
+    height: 95px;
     margin-bottom: 40px;
     margin-top: 20px;
     overflow: hidden;
-    border-radius: 80px;
-    opacity: 1;
     visibility: visible;
-    box-shadow: 0px 0px 40px 0px #48779f;
-  }
-  .resume__photo .user-photo--big {
-    width: 110px;
-    height: 110px;
+    opacity: 1;
+    border-radius: 80px;
   }
   .resume__about {
-    grid-column: 2/3;
-    grid-row: 1/2;
     background-color: red;
   }
   .resume__row {
-    grid-column: 2/3;
-    grid-row: 2/3;
     display: flex;
     background-color: blue;
   }
   .resume .resume__button {
-    grid-column: 2/3;
-    grid-row: 3/4;
     background-color: gray;
   }
 }
@@ -787,7 +766,7 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
 }
 .header__text {
   font-weight: 700;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.1em;
   text-align: center;
   color: var(--default-text-white);
 }
@@ -799,6 +778,7 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   font-size: 18px;
 }
 .header__photo {
+  height: 110px;
   width: 110px;
   margin-left: auto;
   margin-right: auto;
@@ -806,6 +786,20 @@ a.mouse__scroll:active, a.mouse__scroll:focus {
   overflow: hidden;
   border-radius: 80px;
   box-shadow: 0px 0px 40px 0px #48779f;
+}
+@media (min-width: 768px) {
+  .header__photo {
+    margin-bottom: 45px;
+  }
+  .header__title {
+    font-size: 42px;
+    line-height: 1.2;
+    text-shadow: 0px 0px 40px #48779f;
+  }
+  .header__subtitle {
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 .works {

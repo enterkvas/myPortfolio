@@ -1,4 +1,5 @@
-.menu-list {  
+.menu-list {
+
   position: absolute;
   left: -150%;
   background-color: rgba(6, 33, 55, 0.9);
@@ -25,17 +26,39 @@
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 700;
-    letter-spacing: 3px;
-    // scroll-behavior: smooth;
+    letter-spacing: .1em;
   }
 
   &__item a:active {
     color: var(--default-hover-orange);
   }
-}
 
-@media (min-width: 768px) {
-  .menu {
-    position: static;
+  @media (min-width: 768px) {
+    .menu-list {
+
+      position: static;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 70px;
+      background-color: transparent;
+      padding-top: 10px;
+      margin-bottom: 70px;
+
+      & li {
+        margin-bottom: 0;
+      }
+
+      &__link {
+        font-size: 18px;
+        line-height: 1.2;
+
+        &__link--active {
+          color: var(--default-hover-orange);
+        }
+      }
+      
+    }
   }
+
 }
