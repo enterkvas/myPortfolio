@@ -1,8 +1,8 @@
 .heading {
   font-family: 'Noto Sans';
   font-size: 32px;
-  line-height: 1.2;
   font-weight: 700;
+  line-height: 1;
   color: var(--default-text-blue-dark);  
 
   &--medium {  
@@ -14,6 +14,12 @@
   
   &--white {
     color: var(--default-text-white);
+  }
+}
+
+@media(min-width: 768px) {
+  .heading {
+    font-size: 42px;
   }
 }
 

@@ -13,14 +13,14 @@ a.mouse__scroll {
   animation-delay: 1.2s;
   cursor: pointer;
   scroll-behavior: smooth;
-
-  @media (min-width : 768px) {
+}
+@media (min-width : 768px) {
+  a.mouse__scroll {
     bottom: -1em;
-  }
 
-  &:active,
-  &:focus {
-    outline: none;
+    &:active, &:focus {
+      outline: none;
+    }
   }
 }
 

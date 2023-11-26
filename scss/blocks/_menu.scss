@@ -32,33 +32,34 @@
   &__item a:active {
     color: var(--default-hover-orange);
   }
+}
 
-  @media (min-width: 768px) {
-    .menu-list {
+@media (min-width: 768px) {
+  .menu-list {
 
-      position: static;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 70px;
-      background-color: transparent;
-      padding-top: 10px;
-      margin-bottom: 70px;
+    position: static;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 85px;
+    background-color: transparent;
+    padding-top: 0px;
+    margin-bottom: 70px;
 
-      & li {
-        margin-bottom: 0;
-      }
-
-      &__link {
-        font-size: 18px;
-        line-height: 1.2;
-
-        &__link--active {
-          color: var(--default-hover-orange);
-        }
-      }
-      
+    &._active {
+      top: 0px;
+      left: 0;
+      height: auto;
+      transition: all 0.5s ease 0s;
     }
-  }
 
+    & li {
+      margin-bottom: 0;
+      line-height: 1.2;
+    }
+
+  }
+  a.menu-list__link--active {
+    color: var(--default-hover-orange);
+  }
 }
