@@ -491,6 +491,11 @@ a.mouse__scroll {
   border-bottom: 1px dotted var(--default-text-white);
 }
 
+@media (min-width: 768px) {
+  .definition-list {
+    gap: 13px;
+  }
+}
 @media (min-width: 992px) {
   a:hover {
     color: var(--default-hover-orange);
@@ -502,7 +507,7 @@ a.mouse__scroll {
   font-family: "Noto Sans";
   font-size: 32px;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.2;
   color: var(--default-text-blue-dark);
 }
 .heading--medium {
@@ -600,7 +605,7 @@ a.mouse__scroll {
 .form {
   position: relative;
   display: grid;
-  gap: 10px;
+  gap: 6px;
 }
 .form::after {
   position: absolute;
@@ -676,13 +681,13 @@ a.mouse__scroll {
 }
 
 .contacts {
-  padding: 35px 0 50px;
+  padding: 50px 0 50px;
   background-color: var(--default-bg-contacts);
   color: var(--default-text-white);
 }
 .contacts__row {
   display: grid;
-  gap: 30px;
+  gap: 20px;
 }
 .contacts__description {
   margin: 10px 0 20px;
@@ -724,12 +729,12 @@ a.mouse__scroll {
 
 @media (min-width: 768px) {
   .resume {
-    padding: 56px 0 60px;
+    padding: 50px 0 60px;
   }
   .resume__container {
     padding: 0 24px;
     display: grid;
-    row-gap: 25px;
+    row-gap: 23px;
     -moz-column-gap: 10px;
          column-gap: 10px;
     grid-template-columns: 114px 1fr;
@@ -755,7 +760,7 @@ a.mouse__scroll {
   .resume__row {
     grid-area: resume__row;
     display: flex;
-    margin: 0;
+    margin: 8px 0 9px;
   }
   .resume__col {
     flex-grow: 1;
@@ -857,7 +862,7 @@ a.mouse__scroll {
 .works-filter__categories {
   text-align: center;
   display: grid;
-  gap: 7px;
+  gap: 10px;
 }
 .works-filter .filter {
   display: inline-block;
@@ -865,7 +870,7 @@ a.mouse__scroll {
   padding: 12px 25px;
 }
 .works-filter .filter--active {
-  padding: 10px 20px;
+  padding: 10px 23px;
   border: 2px solid var(--default-text-blue-dark);
   color: #000;
 }

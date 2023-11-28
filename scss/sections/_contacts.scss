@@ -1,11 +1,11 @@
 .contacts {
-  padding: 35px 0 50px;
+  padding: 50px 0 50px;
   background-color: var(--default-bg-contacts);
   color: var(--default-text-white);
 
   &__row{
     display: grid;
-    gap: 30px;
+    gap: 20px;
   }   
   &__description {
     margin: 10px 0 20px;

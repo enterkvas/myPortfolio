@@ -47,6 +47,12 @@
   }  
 }
 
+@media(min-width:768px) {
+  .definition-list {
+    gap: 13px;
+  }
+}
+
 @media(min-width:992px) {
   a:hover {
     color: var(--default-hover-orange);

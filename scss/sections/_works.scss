@@ -17,7 +17,7 @@
     &__categories {
       text-align: center;
       display: grid;
-      gap: 7px;
+      gap: 10px;
     }
     
     // &__element {     
@@ -32,7 +32,7 @@
         padding: 12px 25px;        
 
         &--active {
-          padding: 10px 20px;
+          padding: 10px 23px;
           border: 2px solid var(--default-text-blue-dark);
           color: #000;          
         }
