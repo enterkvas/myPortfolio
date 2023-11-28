@@ -724,7 +724,7 @@ a.mouse__scroll {
 
 @media (min-width: 768px) {
   .resume {
-    padding: 56px 0px;
+    padding: 56px 0 60px;
   }
   .resume__container {
     padding: 0 24px;
