@@ -339,7 +339,7 @@ a.mouse__scroll {
 .button {
   display: inline-block;
   background-color: var(--default-text-blue-dark);
-  padding: 15px 20px;
+  padding: 15px 25px;
   color: #fff;
   border-radius: 24px;
   font-size: 16px;
@@ -724,15 +724,15 @@ a.mouse__scroll {
 
 @media (min-width: 768px) {
   .resume {
-    padding: 54px 0px;
+    padding: 56px 0px;
   }
   .resume__container {
     padding: 0 24px;
     display: grid;
-    row-gap: 30px;
+    row-gap: 25px;
     -moz-column-gap: 10px;
          column-gap: 10px;
-    grid-template-columns: 155px 1fr;
+    grid-template-columns: 114px 1fr;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "resume__photo resume__title" "resume__photo resume__about" "resume__photo resume__row" "resume__photo resume__button";
   }
