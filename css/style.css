@@ -459,6 +459,28 @@ a.mouse__scroll {
   line-height: 1.4285714286;
 }
 
+@media (min-width: 768px) {
+  .card a.card__img {
+    display: inline-block;
+    min-height: auto;
+  }
+  .card a.card__img img {
+    max-width: 220px;
+    max-height: 190px;
+  }
+  .card .card__text {
+    width: 220px;
+    padding: 0 5px;
+  }
+  .card .card__text .card__description p {
+    font-size: 14px;
+    line-height: 1.4285714286;
+  }
+  .card .card__text .card__title {
+    margin: 10px 0;
+    min-height: 48px;
+  }
+}
 .definition-list {
   display: grid;
   gap: 18px;
@@ -680,6 +702,39 @@ a.mouse__scroll {
   color: var(--default-hover-orange);
 }
 
+.works-filter {
+  font-family: "Noto Sans";
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.works-filter__categories {
+  text-align: center;
+  display: grid;
+  gap: 10px;
+}
+.works-filter .filter {
+  display: inline-block;
+  color: #cecece;
+  padding: 12px 25px;
+}
+.works-filter .filter--active {
+  padding: 10px 23px;
+  border: 2px solid var(--default-text-blue-dark);
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  .works-filter__categories {
+    display: flex;
+    justify-content: center;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  .works-filter .filter--active {
+    padding: 10px 30px;
+  }
+}
 .contacts {
   padding: 50px 0 50px;
   background-color: var(--default-bg-contacts);
@@ -853,29 +908,33 @@ a.mouse__scroll {
   margin-bottom: 25px;
   text-align: center;
 }
-.works-filter {
-  font-family: "Noto Sans";
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.works-filter__categories {
-  text-align: center;
-  display: grid;
-  gap: 10px;
-}
-.works-filter .filter {
-  display: inline-block;
-  color: #cecece;
-  padding: 12px 25px;
-}
-.works-filter .filter--active {
-  padding: 10px 23px;
-  border: 2px solid var(--default-text-blue-dark);
-  color: #000;
-}
 .works__row {
   display: grid;
-  gap: 35px;
+  row-gap: 35px;
   margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+  .works {
+    padding: 54px 0 15px;
+  }
+  .works__container {
+    padding: 0 24px;
+  }
+  .works__title {
+    margin-bottom: 33px;
+  }
+  .works__row {
+    margin-top: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    row-gap: 48px;
+  }
+  .works__item {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */
