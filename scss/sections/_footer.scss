@@ -17,3 +17,13 @@
     }
   }
 }
+
+@media (min-width:768px) {
+  .footer {
+    &__container {padding: 0 24px;}
+    &__description {
+      font-size: 14px;
+      line-height: calc(26 / 14);
+    }
+  }
+}

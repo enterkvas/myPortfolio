@@ -540,11 +540,23 @@ a.mouse__scroll {
 }
 .heading--white {
   color: var(--default-text-white);
+  font-family: "Myraid Pro";
 }
 
 @media (min-width: 768px) {
   .heading {
     font-size: 42px;
+  }
+  .heading--white {
+    color: var(--default-text-white);
+    font-family: "Myraid Pro";
+  }
+  .heading--white-big {
+    letter-spacing: 10px;
+  }
+  .heading--medium {
+    font-family: "Noto Sans";
+    line-height: 1.2;
   }
 }
 .menu-list {
@@ -702,6 +714,38 @@ a.mouse__scroll {
   color: var(--default-hover-orange);
 }
 
+@media (min-width: 768px) {
+  .form {
+    row-gap: 10px;
+  }
+  .form__item--bg-pencil {
+    position: relative;
+  }
+  .form__item--bg-pencil:after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 75%;
+    right: -6%;
+    height: 153px;
+    width: 203px;
+    background-image: url("../../img/bg/pencil.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+  .form__input {
+    padding: 13px 9px;
+    border-radius: 8px;
+  }
+  .form__message {
+    height: 100%;
+    max-height: 130px;
+    border-radius: 8px;
+  }
+  .form__button {
+    width: 210px;
+  }
+}
 .works-filter {
   font-family: "Noto Sans";
   font-size: 16px;
@@ -752,6 +796,24 @@ a.mouse__scroll {
   margin-top: 20px;
 }
 
+@media (min-width: 768px) {
+  .contacts {
+    padding: 55px 0 30px;
+  }
+  .contacts__container {
+    padding: 0 24px;
+  }
+  .contacts__row {
+    grid-template-columns: 1fr 1fr;
+    -moz-column-gap: 30px;
+         column-gap: 30px;
+    margin-top: -10px;
+  }
+  .contacts__description {
+    margin: 42px 0 34px;
+    line-height: 1.75;
+  }
+}
 .resume {
   padding: 35px 0 40px;
   color: var(--default-text-black-near);
@@ -843,6 +905,15 @@ a.mouse__scroll {
   border-bottom: 1px solid #5e92b9;
 }
 
+@media (min-width: 768px) {
+  .footer__container {
+    padding: 0 24px;
+  }
+  .footer__description {
+    font-size: 14px;
+    line-height: 1.8571428571;
+  }
+}
 .header {
   min-height: 100vh;
   padding: 50px 0 50px;

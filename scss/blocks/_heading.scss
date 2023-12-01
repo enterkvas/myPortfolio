@@ -14,12 +14,25 @@
   
   &--white {
     color: var(--default-text-white);
+    font-family: 'Myraid Pro';
   }
 }
 
 @media(min-width: 768px) {
   .heading {
     font-size: 42px;
+
+    &--white {
+      color: var(--default-text-white);
+      font-family: 'Myraid Pro';
+      
+      &-big {letter-spacing: 10px;}
+    }
+
+    &--medium {
+      font-family: 'Noto Sans';
+      line-height: 1.2;
+    }
   }
 }
 
