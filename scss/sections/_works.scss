@@ -11,10 +11,15 @@
     display: grid;
     row-gap: 35px;
     margin-top: 15px;
-  }  
+  }
+  
+  &__col {
+    margin: 0 auto;
+  }
 }
 
 @media(min-width: 768px) {
+
   .works {
     padding: 54px 0 15px;
 
@@ -31,7 +36,11 @@
       grid-template-columns: repeat(3, 1fr);;
       grid-template-rows: auto auto auto;
       column-gap: 30px;
-      row-gap: 48px;
+      row-gap: 40px;
+    }
+
+    &__col {
+      margin: 0;
     }
 
     &__item {
@@ -40,4 +49,16 @@
       place-items: center;
     }
   }
+
+}
+
+@media(min-width: 1200px) {
+
+  .works__container {
+    max-width: 1140px;
+    padding: 0;
+  }
+
+  .works__row {row-gap: 50px;}
+
 }

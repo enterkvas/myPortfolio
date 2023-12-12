@@ -80,6 +80,7 @@ document.addEventListener('DOMContentLoaded', function(){
     }
 
     if(inputTel.value !==''){
+      formRemoveErrorForTel(inputTel);
       if(phoneTest(inputTel)){
         formAddErrorForTel(inputTel, 'The first character must be a number or a plus. The last character is a number only. Parentheses, spaces and hyphens are allowed. From 4 to 14 characters in total.');
         error++;

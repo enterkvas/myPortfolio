@@ -41,7 +41,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 85px;
+    column-gap: 85px;
     background-color: transparent;
     padding-top: 0px;
     margin-bottom: 70px;
@@ -61,5 +61,15 @@
   }
   a.menu-list__link--active {
     color: var(--default-hover-orange);
+  }
+}
+@media (min-width: 1200px) {
+  .menu-list {
+    column-gap: 130px;
+    margin-bottom: 108px;
+
+    &__item a {
+      font-size: 22px;
+    }
   }
 }
