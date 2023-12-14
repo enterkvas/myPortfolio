@@ -10,7 +10,7 @@
   transition: all 0.5s ease 0s;
 
   &._active {
-    top: 0px;
+    top: 0;
     left: 0;
     height: 100vh;
     transition: all 0.5s ease 0s;
@@ -32,11 +32,12 @@
   &__item a:active {
     color: var(--default-hover-orange);
   }
+  
 }
 
 @media (min-width: 768px) {
-  .menu-list {
 
+  .menu-list {
     position: static;
     display: flex;
     justify-content: center;
@@ -50,20 +51,28 @@
       top: 0px;
       left: 0;
       height: auto;
-      transition: all 0.5s ease 0s;
     }
 
     & li {
       margin-bottom: 0;
       line-height: 1.2;
     }
-
   }
-  a.menu-list__link--active {
-    color: var(--default-hover-orange);
-  }
+  
 }
+
+@media (min-width: 992px) {
+
+  a.menu-list__link:hover {
+    color: var(--default-hover-orange);
+    text-decoration: none;
+    transition: all 1s ease 0s;
+  }
+
+}
+
 @media (min-width: 1200px) {
+
   .menu-list {
     column-gap: 130px;
     margin-bottom: 108px;
@@ -72,4 +81,5 @@
       font-size: 22px;
     }
   }
+
 }

@@ -14,13 +14,25 @@
   .filter {
     display: inline-block;
     color: #cecece;
-    padding: 12px 25px;        
+    padding: 12px 25px; 
+    transition: all 0.5s ease 0s;       
 
     &--active {
       padding: 10px 23px;
       border: 2px solid var(--default-text-blue-dark);
       color: #000;          
     }
+
+    @media (min-width: 992px) {
+
+      &:hover {
+        cursor: pointer;
+        color: var(--default-hover-orange);
+        transition: all 1s ease 0s; 
+      }
+
+    }
+
   }
   
 }

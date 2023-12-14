@@ -54,11 +54,36 @@
 
 @media(min-width: 1200px) {
 
-  .works__container {
-    max-width: 1140px;
-    padding: 0;
-  }
+  .works {
+    
+    &--bg-gear {
+      position: relative;
+  
+      &::after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 50%;
+        left: -3%;
+        height: 166px;
+        width: 84px;
+        background-image: url('../../img/bg/gear.png');
+        background-repeat: no-repeat;
+        background-position: left top;
 
-  .works__row {row-gap: 50px;}
+        @media (min-width: 1300px) {
+          left: 0%;
+        }
+      }
+    }
+
+    &__container {
+      max-width: 1140px;
+      padding: 0;
+    }
+
+    &__row {row-gap: 50px;}
+
+  }  
 
 }

@@ -478,6 +478,10 @@ a.mouse__scroll {
   .card__title a {
     font-size: 24px;
   }
+  .card__title a:hover {
+    color: var(--default-hover-orange);
+    transition: all 1s ease 0s;
+  }
   .card__description p {
     font-size: 16px;
     line-height: 1.5;
@@ -497,6 +501,11 @@ a.mouse__scroll {
   display: grid;
   gap: 18px;
   margin-top: 17px;
+}
+@media (min-width: 768px) {
+  .definition-list {
+    gap: 13px;
+  }
 }
 .definition-list__def {
   font-size: 14px;
@@ -524,19 +533,15 @@ a.mouse__scroll {
   color: var(--default-text-white);
   border-bottom: 1px dotted var(--default-text-white);
 }
-
-@media (min-width: 768px) {
-  .definition-list {
-    gap: 13px;
-  }
-}
 @media (min-width: 992px) {
-  a:hover {
+  .definition-list__description a:hover {
     color: var(--default-hover-orange);
     text-decoration: none;
     border-bottom: 1px dotted var(--default-hover-orange);
+    transition: all 1s ease 0s;
   }
 }
+
 .heading {
   font-family: "Noto Sans";
   font-size: 32px;
@@ -582,7 +587,7 @@ a.mouse__scroll {
   transition: all 0.5s ease 0s;
 }
 .menu-list._active {
-  top: 0px;
+  top: 0;
   left: 0;
   height: 100vh;
   transition: all 0.5s ease 0s;
@@ -618,14 +623,17 @@ a.mouse__scroll {
     top: 0px;
     left: 0;
     height: auto;
-    transition: all 0.5s ease 0s;
   }
   .menu-list li {
     margin-bottom: 0;
     line-height: 1.2;
   }
-  a.menu-list__link--active {
+}
+@media (min-width: 992px) {
+  a.menu-list__link:hover {
     color: var(--default-hover-orange);
+    text-decoration: none;
+    transition: all 1s ease 0s;
   }
 }
 @media (min-width: 1200px) {
@@ -769,6 +777,15 @@ a.mouse__scroll {
     width: 210px;
   }
 }
+@media (min-width: 768px) and (min-width: 992px) {
+  .form__button {
+    transition: all 1s ease 0s;
+  }
+  .form__button:hover {
+    color: var(--default-hover-orange);
+    border: 4px solid var(--default-hover-orange);
+  }
+}
 .works-filter {
   font-family: "Noto Sans";
   font-size: 16px;
@@ -784,11 +801,19 @@ a.mouse__scroll {
   display: inline-block;
   color: #cecece;
   padding: 12px 25px;
+  transition: all 0.5s ease 0s;
 }
 .works-filter .filter--active {
   padding: 10px 23px;
   border: 2px solid var(--default-text-blue-dark);
   color: #000;
+}
+@media (min-width: 992px) {
+  .works-filter .filter:hover {
+    cursor: pointer;
+    color: var(--default-hover-orange);
+    transition: all 1s ease 0s;
+  }
 }
 
 @media (min-width: 768px) {
@@ -846,7 +871,7 @@ a.mouse__scroll {
     display: block;
     content: "";
     top: 30%;
-    left: 20%;
+    left: 100%;
     height: 225px;
     width: 181px;
     background-image: url("../../img/bg/cloud.png");
@@ -879,7 +904,7 @@ a.mouse__scroll {
   font-size: 0;
 }
 .resume__row {
-  margin: 35px 0 15px;
+  margin: 35px 0 20px;
   display: grid;
   gap: 35px;
 }
@@ -923,8 +948,31 @@ a.mouse__scroll {
     flex-grow: 1;
     flex-basis: 0;
   }
-  .resume .resume__button {
+  .resume__button {
     grid-area: resume__button;
+  }
+}
+@media (min-width: 992px) {
+  a.button:hover {
+    color: var(--default-hover-orange);
+    transition: all 1s ease 0s;
+  }
+}
+@media (min-width: 1200px) {
+  .resume--bg-laptop {
+    position: relative;
+  }
+  .resume--bg-laptop::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 15%;
+    left: 85%;
+    height: 468px;
+    width: 324px;
+    background-image: url("../../img/bg/laptop.png");
+    background-repeat: no-repeat;
+    background-position: left top;
   }
 }
 .footer {
@@ -943,6 +991,12 @@ a.mouse__scroll {
 .footer__description a {
   color: #5e92b9;
   border-bottom: 1px solid #5e92b9;
+}
+@media (min-width: 992px) {
+  .footer__description a:hover {
+    color: var(--default-hover-orange);
+    transition: all 1s ease 0s;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1066,6 +1120,28 @@ a.mouse__scroll {
     display: flex;
     flex-direction: column;
     place-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .works--bg-gear {
+    position: relative;
+  }
+  .works--bg-gear::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 50%;
+    left: -3%;
+    height: 166px;
+    width: 84px;
+    background-image: url("../../img/bg/gear.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+  }
+}
+@media (min-width: 1200px) and (min-width: 1300px) {
+  .works--bg-gear::after {
+    left: 0%;
   }
 }
 @media (min-width: 1200px) {

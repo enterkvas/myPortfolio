@@ -7,6 +7,7 @@
     line-height: calc(28 / 16);
     color: #82b3d7;
   }
+
   &__description {
     line-height: calc(22 / 14);
     color: #5e92b9;
@@ -14,8 +15,17 @@
     & a {
       color: #5e92b9;
       border-bottom: 1px solid #5e92b9;
+
+      @media (min-width: 992px) {
+
+        &:hover {
+          color: var(--default-hover-orange);
+          transition: all 1s ease 0s;
+        }
+
+      }
     }
-  }
+  }  
 }
 
 @media (min-width:768px) {
