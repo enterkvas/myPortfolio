@@ -35,6 +35,7 @@
     transition: all 0.5s ease;
 
     &:focus {box-shadow: 0px 0px 5px 10px var(--default-bg-footer);}
+    
     &._error {
       border: 3px solid var(--default-color-form-border);
     }        
@@ -73,6 +74,7 @@
     font-weight: 700;
     color: var(--default-text-white);
   }
+
   .checkbox {
     &__label {
       & span {
@@ -91,7 +93,6 @@
 
     &__item--bg-pencil {
       position: relative;
-
       &::after {
         position: absolute;
         display: block;
@@ -103,8 +104,7 @@
         background-image: url('../../img/bg/pencil.png');
         background-repeat: no-repeat;
         background-position: left top;
-      }
-      
+      }      
     }
 
     &__input {
@@ -121,8 +121,7 @@
     &__button {
       width: 210px;
 
-      @media (min-width: 992px) {
-        
+      @media (min-width: 992px) {        
         transition: all 1s ease 0s;
         &:hover {
           color: var(--default-hover-orange);
@@ -130,8 +129,6 @@
         }
 
       }
-
-
     }
   }
 }

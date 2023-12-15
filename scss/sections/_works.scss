@@ -3,24 +3,21 @@
   border-top: 1px solid var(--default-border-bottom-sections);
 
   &__title {
-    margin-bottom: 25px;
+    margin-bottom: 1em;
     text-align: center;
   }
 
   &__row {
     display: grid;
-    row-gap: 35px;
-    margin-top: 15px;
+    row-gap: 2em;
+    margin-top: 2em;
   }
   
   &__col {
     margin: 0 auto;
   }
-}
 
-@media(min-width: 768px) {
-
-  .works {
+  @media(min-width: 768px) {
     padding: 54px 0 15px;
 
     &__container {
@@ -50,12 +47,7 @@
     }
   }
 
-}
-
-@media(min-width: 1200px) {
-
-  .works {
-    
+  @media(min-width: 1200px) {
     &--bg-gear {
       position: relative;
   
@@ -83,7 +75,5 @@
     }
 
     &__row {row-gap: 50px;}
-
-  }  
-
+  }
 }

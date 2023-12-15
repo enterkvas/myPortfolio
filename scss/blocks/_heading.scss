@@ -3,40 +3,20 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 1.2;
-  color: var(--default-text-blue-dark);  
+  color: var(--default-text-blue-dark); 
+  
+  @media(min-width:768px) {
+    font-size: 42px;
+  }
+
+  &--white {
+    color: var(--default-text-white);
+    letter-spacing: 0.1em;
+  }
 
   &--medium {  
     font-size: 24px;
     line-height: calc(28 / 24);
     font-weight: 700;
-    color: #010101;    
-  }
-  
-  &--white {
-    color: var(--default-text-white);
-    font-family: 'Myraid Pro';
   }
 }
-
-@media(min-width: 768px) {
-
-  .heading {
-    font-size: 42px;
-
-    &--white {
-      color: var(--default-text-white);
-      font-family: 'Myraid Pro';
-      
-      &-big {letter-spacing: 10px;}
-    }
-
-    &--medium {
-      font-family: 'Noto Sans';
-      line-height: 1.2;
-    }
-  }
-  
-}
-
-
-

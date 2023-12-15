@@ -31,7 +31,6 @@
 }
 
 @media(min-width: 768px) {
-
   .resume {
     padding: 50px 0 60px;
 
@@ -83,21 +82,16 @@
       grid-area: resume__button;
     }
   }
-
 }
 
 @media (min-width: 992px) {
-
   a.button:hover {
     color: var(--default-hover-orange);
     transition: all 1s ease 0s;
   }
-    
-
 }
 
 @media (min-width: 1200px) {
-
   .resume--bg-laptop {
     position: relative;
 
@@ -113,6 +107,5 @@
       background-repeat: no-repeat;
       background-position: left top;
     }
-  }
-  
+  }  
 }

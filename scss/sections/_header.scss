@@ -41,7 +41,6 @@
 }
 
 @media (min-width: 768px) {
-
   .header {
     padding: 56px 0 50px;  
 
@@ -66,11 +65,9 @@
       text-shadow: 0px 0px 40px #48779f;
     }
   }
-
 }
 
 @media (min-width: 1200px) {
-
   .header {
     &__title {
       font-size: 56px;
@@ -85,5 +82,4 @@
       margin-bottom: 32px;
     }
   }
-
 }

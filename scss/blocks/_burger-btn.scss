@@ -7,6 +7,16 @@
   right: 0;
   z-index: 1;
 
+  @media(min-width:768px) {
+    opacity: 0;
+    visibility: hidden;
+    width: 0px;
+    height: 0px;    
+    left: -1000%;
+    background: transparent;
+    font-size: 0;
+  }
+
   & span,
   &::before,
   &::after {
@@ -51,17 +61,5 @@
 
   &._active::after {
     transform: rotate(45deg) translate(-3px, -50%);
-  }
-}
-
-@media(min-width:768px) {
-  .burger-btn {
-    opacity: 0;
-    visibility: hidden;
-    width: 0px;
-    height: 0px;    
-    left: -1000%;
-    background: transparent;
-    font-size: 0;
   }
 }

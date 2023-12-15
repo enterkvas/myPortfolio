@@ -26,7 +26,6 @@
   }
   
   &__description {    
-    margin-bottom: 17px;    
     font-size: 16px;
     font-weight: 400;
     text-transform: none;     
@@ -37,14 +36,12 @@
       border-bottom: 1px dotted var(--default-text-white);
 
       @media(min-width:992px) {
-
         &:hover {
           color: var(--default-hover-orange);
           text-decoration: none;
           border-bottom: 1px dotted var(--default-hover-orange);
           transition: all 1s ease 0s;
         }
-
       }
     }
   }  

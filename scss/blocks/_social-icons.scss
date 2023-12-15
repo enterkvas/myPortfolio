@@ -7,8 +7,8 @@
     text-decoration: none;
     border-bottom: none;
 
+    &:last-child {margin-right: 0;}  
+
     &:hover {color: var(--default-hover-orange);}
-  } 
-  
-  & a:last-child {margin-right: 0;}  
+  }  
 }
