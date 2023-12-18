@@ -24,9 +24,7 @@
     margin-bottom: 22px;
   }
 
-  &__subtitle {
-    font-size: 18px;
-  }
+  &__subtitle {font-size: 18px;}
 
   &__photo {
     height: 110px;
@@ -44,13 +42,8 @@
   .header {
     padding: 56px 0 50px;  
 
-    &__container {
-      padding: 0 24px;
-    }
-    
-    &__photo {
-      margin-bottom: 40px;
-    }
+    &__container {padding: 0 24px;}    
+    &__photo {margin-bottom: 40px;}
   
     &__title {
       margin-bottom: 14px;
@@ -74,12 +67,7 @@
       margin-bottom: 12px;
     }
 
-    &__subtitle {
-      font-size: 26px;
-    }
-
-    &__photo {
-      margin-bottom: 32px;
-    }
+    &__subtitle {font-size: 26px;}
+    &__photo {margin-bottom: 32px;}
   }
 }

@@ -15,9 +15,7 @@
     transition: all 0.5s ease 0s;
   }
 
-  & li {
-    margin-bottom: 50px;
-  }
+  & li {margin-bottom: 50px;}
 
   &__item a {
     color: var(--default-text-white);
@@ -28,9 +26,7 @@
     letter-spacing: .1em;
   }
 
-  &__item a:active {
-    color: var(--default-hover-orange);
-  }  
+  &__item a:active {color: var(--default-hover-orange);}  
 }
 
 @media (min-width: 768px) {
@@ -70,8 +66,6 @@
     column-gap: 130px;
     margin-bottom: 108px;
 
-    &__item a {
-      font-size: 22px;
-    }
+    &__item a {font-size: 22px;}
   }
 }

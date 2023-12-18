@@ -13,20 +13,13 @@
     margin-top: 2em;
   }
   
-  &__col {
-    margin: 0 auto;
-  }
+  &__col {margin: 0 auto;}
 
   @media(min-width: 768px) {
     padding: 54px 0 15px;
 
-    &__container {
-      padding: 0 24px;
-    }
-
-    &__title {
-      margin-bottom: 33px;
-    }
+    &__container {padding: 0 24px;}
+    &__title {margin-bottom: 33px;}
 
     &__row {
       margin-top: 60px;
@@ -36,9 +29,7 @@
       row-gap: 40px;
     }
 
-    &__col {
-      margin: 0;
-    }
+    &__col {margin: 0;}
 
     &__item {
       display: flex;
@@ -63,9 +54,7 @@
         background-repeat: no-repeat;
         background-position: left top;
 
-        @media (min-width: 1300px) {
-          left: 0%;
-        }
+        @media (min-width: 1300px) {left: 0%;}
       }
     }
 

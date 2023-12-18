@@ -48,9 +48,7 @@
       "resume__photo resume__button";
     }
 
-    &__title {
-      grid-area: resume__title;
-    }
+    &__title {grid-area: resume__title;}
 
     &__photo {
       grid-area: resume__photo;
@@ -78,9 +76,7 @@
       flex-basis: 0;
     }
 
-    &__button {
-      grid-area: resume__button;
-    }
+    &__button {grid-area: resume__button;}
   }
 }
 

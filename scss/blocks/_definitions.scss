@@ -14,9 +14,7 @@
     text-transform: uppercase;
     color: var(--default-text-blue-dark);
 
-    &--light {
-      color: var(--default-text-blue-light);
-    }
+    &--light {color: var(--default-text-blue-light);}
 
     &--bigger {
       margin-bottom: 2px;

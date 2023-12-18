@@ -35,9 +35,7 @@
       border: 2px solid var(--default-text-blue-dark);
       color: #000;
       
-      @media (min-width:768px) {
-        padding: 10px 30px;
-      }
+      @media (min-width:768px) {padding: 10px 30px;}
 
       @media (min-width:992px) {
         &:hover {
