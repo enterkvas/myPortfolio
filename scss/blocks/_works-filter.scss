@@ -7,7 +7,7 @@
   &__categories {
     text-align: center;
     display: grid;
-    row-gap: 1em;
+    row-gap: 0.4em;
 
     @media(min-width: 768px) {
       display: flex;
@@ -23,6 +23,8 @@
     transition: all 0.5s ease 0s; 
     
     @media (min-width:992px) {
+      border: 2px solid transparent;
+
       &:hover {
         border: 2px solid var(--default-hover-orange);
         cursor: pointer;

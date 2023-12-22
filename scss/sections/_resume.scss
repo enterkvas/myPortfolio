@@ -1,8 +1,8 @@
 .resume {
-  padding: 35px 0 40px;  
+  padding: 36px 0 40px;  
   color: var(--default-text-black-near);
   
-  &__about {margin: 12px 0 30px;}
+  &__about {margin: 12px 0 32px;}
   
   &__name {
     font-size: 18px;
@@ -24,20 +24,20 @@
   }
   
   &__row {
-    margin: 35px 0 20px;
+    margin: 36px 0 20px;
     display: grid;
-    gap: 35px;
+    row-gap: 36px;
   }
 }
 
 @media(min-width: 768px) {
   .resume {
-    padding: 50px 0 60px;
+    padding: 48px 0 60px;
 
     &__container {
       padding: 0 24px;
       display: grid;
-      row-gap: 23px;
+      row-gap: 24px;
       column-gap: 10px;
       grid-template-columns: 114px 1fr;
       grid-template-rows: auto auto auto auto;
@@ -68,7 +68,7 @@
     &__row {
       grid-area: resume__row;
       display: flex;
-      margin: 8px 0 9px;      
+      margin: 8px 0 8px;      
     }
 
     &__col {

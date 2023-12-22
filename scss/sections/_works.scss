@@ -1,25 +1,25 @@
 .works {
-  padding: 35px 0 43px;
+  padding: 36px 0 44px;
   border-top: 1px solid var(--default-border-bottom-sections);
 
   &__title {
-    margin-bottom: 1em;
+    margin-bottom: 1.2em;
     text-align: center;
   }
 
   &__row {
     display: grid;
-    row-gap: 2em;
-    margin-top: 2em;
+    row-gap: 2.4em;
+    margin-top: 1.2em;
   }
   
   &__col {margin: 0 auto;}
 
   @media(min-width: 768px) {
-    padding: 54px 0 15px;
+    padding: 52px 0 16px;
 
     &__container {padding: 0 24px;}
-    &__title {margin-bottom: 33px;}
+    &__title {margin-bottom: 32px;}
 
     &__row {
       margin-top: 60px;
@@ -63,6 +63,6 @@
       padding: 0;
     }
 
-    &__row {row-gap: 50px;}
+    &__row {row-gap: 52px;}
   }
 }

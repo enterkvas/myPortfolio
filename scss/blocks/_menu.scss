@@ -15,7 +15,7 @@
     transition: all 0.5s ease 0s;
   }
 
-  & li {margin-bottom: 50px;}
+  & li {margin-bottom: 48px;}
 
   &__item a {
     color: var(--default-text-white);
@@ -38,7 +38,7 @@
     column-gap: 85px;
     background-color: transparent;
     padding-top: 0px;
-    margin-bottom: 70px;
+    margin-bottom: 68px;
 
     &._active {
       top: 0px;

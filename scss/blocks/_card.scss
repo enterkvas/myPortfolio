@@ -17,7 +17,7 @@
     &--hover {display: none;}     
   } 
   
-  &__text {padding: 20px 0px 10px;}
+  &__text {padding: 20px 0px 8px;}
 
   &__title {
     text-wrap: balance;
@@ -32,7 +32,7 @@
   }
 
   &__description {
-    margin-top: 10px;
+    margin-top: 8px;
     line-height: calc(20 / 14);    
   }
 }
