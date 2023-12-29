@@ -399,6 +399,8 @@ a.mouse__scroll {
 @media (min-width: 992px) {
   .btn_up:hover {
     cursor: pointer;
+    background-color: var(--default-hover-orange);
+    transition: 0.5s;
   }
 }
 
@@ -448,9 +450,13 @@ a.mouse__scroll {
   }
 }
 @media (min-width: 992px) {
+  .card__img {
+    cursor: pointer;
+  }
   .card__img--hover {
     position: absolute;
     display: block;
+    overflow: hidden;
     top: 100%;
     bottom: 0;
     left: 0;

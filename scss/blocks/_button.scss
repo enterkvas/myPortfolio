@@ -60,6 +60,10 @@
   &.active {display: block;}
 
   @media(min-width: 992px) {
-    &:hover {cursor: pointer;}
+    &:hover {
+      cursor: pointer;
+      background-color: var(--default-hover-orange);
+      transition: 0.5s;
+    }
   }
 }

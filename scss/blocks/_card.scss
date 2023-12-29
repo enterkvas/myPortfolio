@@ -54,10 +54,13 @@
 
 @media (min-width: 992px) {
   .card {
-    &__img {      
+    &__img { 
+      cursor: pointer;
+
       &--hover {
         position: absolute;
         display: block;
+        overflow: hidden;
         top: 100%;
         bottom: 0;
         left: 0;      

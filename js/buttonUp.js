@@ -3,7 +3,7 @@
 function btn_up() {
   const btn_upElement = document.createElement('div');
   btn_upElement.className = 'btn_up';
-  document.body.append(btn_upElement);
+  document.body.append(btn_upElement); 
 
   btn_upElement.addEventListener('click', function (e) {    
     window.scrollTo({ top: 0, behavior: 'smooth' });
