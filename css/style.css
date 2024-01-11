@@ -680,7 +680,7 @@ a.mouse__scroll {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(51, 51, 51, 0.9) url("../../img/bg/loading.gif") center/50px no-repeat;
+  background: rgba(51, 51, 51, 0.9) url("../img/bg/loading.gif") center/50px no-repeat;
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s ease 0s;
@@ -761,7 +761,7 @@ a.mouse__scroll {
     right: -6%;
     height: 153px;
     width: 203px;
-    background-image: url("../../img/bg/pencil.png");
+    background-image: url("../img/bg/pencil.png");
     background-repeat: no-repeat;
     background-position: left top;
   }
@@ -887,7 +887,7 @@ a.mouse__scroll {
     left: 100%;
     height: 225px;
     width: 181px;
-    background-image: url("../../img/bg/cloud.png");
+    background-image: url("../img/bg/cloud.png");
     background-repeat: no-repeat;
     background-position: left top;
   }
@@ -983,7 +983,7 @@ a.mouse__scroll {
     left: 85%;
     height: 468px;
     width: 324px;
-    background-image: url("../../img/bg/laptop.png");
+    background-image: url("../img/bg/laptop.png");
     background-repeat: no-repeat;
     background-position: left top;
   }
@@ -1146,7 +1146,7 @@ a.mouse__scroll {
     left: -3%;
     height: 166px;
     width: 84px;
-    background-image: url("../../img/bg/gear.png");
+    background-image: url("../img/bg/gear.png");
     background-repeat: no-repeat;
     background-position: left top;
   }
