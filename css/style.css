@@ -175,6 +175,9 @@ a.mouse__scroll {
   bottom: -3em;
   left: 50%;
   margin-left: -12px;
+  -webkit-animation-delay: 1.2s;
+  -moz-animation-delay: 1.2s;
+  -o-animation-delay: 1.2s;
   animation-delay: 1.2s;
   cursor: pointer;
   scroll-behavior: smooth;
@@ -192,7 +195,9 @@ a.mouse__scroll {
   display: block;
   width: 5px;
   height: 5px;
+  -ms-transform: rotate(45deg);
   /* IE 9 */
+  -webkit-transform: rotate(45deg);
   /* Chrome, Safari, Opera */
   transform: rotate(45deg);
   border-right: 2px solid #fff;
@@ -209,22 +214,33 @@ a.mouse__scroll {
 .unu,
 .doi,
 .trei {
+  -webkit-animation: mouse-scroll 1s infinite;
+  -moz-animation: mouse-scroll 1s infinite;
   animation: mouse-scroll 1s infinite;
 }
 
 .unu {
+  -webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;
   animation-delay: 0.1s;
+  -webkit-animation-direction: alternate;
   animation-direction: alternate;
 }
 
 .doi {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
   animation-delay: 0.2s;
+  -webkit-animation-direction: alternate;
   animation-direction: alternate;
   margin-top: -6px;
 }
 
 .trei {
+  -webkit-animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
   animation-delay: 0.3s;
+  -webkit-animation-direction: alternate;
   animation-direction: alternate;
   margin-top: -6px;
 }
@@ -254,20 +270,92 @@ a.mouse__scroll {
   height: 4px;
   width: 4px;
   border: 2px solid #fff;
+  -webkit-border-radius: 8px;
   border-radius: 8px;
 }
 
 .wheel {
+  -webkit-animation: mouse-wheel 0.6s linear infinite;
+  -moz-animation: mouse-wheel 0.6s linear infinite;
   animation: mouse-wheel 0.6s linear infinite;
 }
-@keyframes mouse-wheel {
+
+@-webkit-keyframes mouse-wheel {
   0% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
     transform: translateY(0);
   }
   100% {
     opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
     transform: translateY(6px);
+  }
+}
+@keyframes mouse-wheel {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
+@-moz-keyframes mouse-wheel {
+  0% {
+    top: 1px;
+  }
+  25% {
+    top: 2px;
+  }
+  50% {
+    top: 3px;
+  }
+  75% {
+    top: 2px;
+  }
+  100% {
+    top: 1px;
+  }
+}
+@-webkit-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes mouse-scroll {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes mouse-scroll {
@@ -355,7 +443,7 @@ a.mouse__scroll {
 .btn_up {
   display: none;
   position: fixed;
-  bottom: 80px;
+  bottom: 40px;
   right: 30px;
   width: 50px;
   height: 50px;
@@ -584,7 +672,6 @@ a.mouse__scroll {
   padding-top: 120px;
   width: 100%;
   text-align: center;
-  top: 30px;
   transition: all 0.5s ease 0s;
 }
 .menu-list._active {
@@ -614,8 +701,7 @@ a.mouse__scroll {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    -moz-column-gap: 85px;
-         column-gap: 85px;
+    column-gap: 85px;
     background-color: transparent;
     padding-top: 0px;
     margin-bottom: 68px;
@@ -639,8 +725,7 @@ a.mouse__scroll {
 }
 @media (min-width: 1200px) {
   .menu-list {
-    -moz-column-gap: 130px;
-         column-gap: 130px;
+    column-gap: 130px;
     margin-bottom: 108px;
   }
   .menu-list__item a {
@@ -866,8 +951,7 @@ a.mouse__scroll {
   }
   .contacts__row {
     grid-template-columns: 1fr 1fr;
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+    column-gap: 30px;
     margin-top: -10px;
   }
   .contacts__description {
@@ -930,8 +1014,7 @@ a.mouse__scroll {
     padding: 0 24px;
     display: grid;
     row-gap: 24px;
-    -moz-column-gap: 10px;
-         column-gap: 10px;
+    column-gap: 10px;
     grid-template-columns: 114px 1fr;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "resume__photo resume__title" "resume__photo resume__about" "resume__photo resume__row" "resume__photo resume__button";
@@ -1028,12 +1111,6 @@ a.mouse__scroll {
   background-image: url("../img/bg/bg_header_767.jpg");
   background-size: cover;
 }
-.header__content {
-  position: relative;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-}
 .header__text {
   font-weight: 700;
   text-align: center;
@@ -1121,8 +1198,7 @@ a.mouse__scroll {
     margin-top: 60px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto auto;
-    -moz-column-gap: 30px;
-         column-gap: 30px;
+    column-gap: 30px;
     row-gap: 40px;
   }
   .works__col {
